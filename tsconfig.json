@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "./dist",
+    "noImplicitAny": true,
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "suppressImplicitAnyIndexErrors":true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "target": "es5",
+    "moduleResolution": "node",
+    "rootDir": "src/",
+    "lib": ["dom", "scripthost", "es5", "es2015.promise", "es2015.core"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+    }
+  },
+  "include": [
+      "src/*.ts",
+      "typings/**/*.d.ts"
+    ],
+  "exclude": ["node_modules"]
+}
